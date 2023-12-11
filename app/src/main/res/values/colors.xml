@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="my_primary">#FA7877</color>
     <color name="RED">#FF0711</color>
+    <color name="Blue">#0033cc</color>
+    <color name="PURPLE">#6600cc</color>
+    <color name="Lightblue">#66ccff</color>
 </resources>

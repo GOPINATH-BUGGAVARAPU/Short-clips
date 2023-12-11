@@ -22,7 +22,7 @@ import uk.ac.tees.W9626530.short_clips.databinding.ActivityVideoUploadBinding
 import uk.ac.tees.W9626530.short_clips.model.VideoModel
 import uk.ac.tees.W9626530.short_clips.util.UiUtil
 
-class VideoUploadActivity : AppCompatActivity() {
+class upload : AppCompatActivity() {
 
     lateinit var binding: ActivityVideoUploadBinding
     private var selectedVideoUri : Uri? =null

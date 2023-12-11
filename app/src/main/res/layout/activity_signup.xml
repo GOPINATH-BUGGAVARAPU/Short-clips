@@ -7,20 +7,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:layout_margin="16dp"
-    tools:context="uk.ac.tees.W9626530.short_clips.SignupActivity">
+    android:background="@drawable/background"
+    android:layout_margin="0dp"
+    tools:context="uk.ac.tees.W9626530.short_clips.Signup">
 
     <ImageView
-        android:layout_width="160dp"
-        android:layout_height="160dp"
+        android:layout_width="171dp"
+        android:layout_height="201dp"
         android:layout_margin="8dp"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logo" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quick Bites"
+        android:text="Short Clips"
+        android:textColor="@color/Blue"
+        android:textAllCaps="true"
         android:gravity="center"
-        android:textSize="22sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:letterSpacing="0.07"/>
 
@@ -33,16 +36,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Signup"
+            android:text="Register"
             android:gravity="center"
-            android:textStyle="bold"
+            android:textStyle="italic"
             android:textSize="32sp"
             android:layout_margin="12dp"/>
         <EditText
             android:id="@+id/email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Enter Email"
             android:background="@drawable/rounded_corner"
             android:inputType="textEmailAddress"
             android:padding="12dp"
@@ -65,13 +68,15 @@
             android:inputType="textPassword"
             android:padding="12dp"
             android:layout_margin="12dp"/>
+
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
             android:id="@+id/submit_btn"
-            android:text="Signup"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:textSize="30sp"
+            android:text="Signup" />
         <ProgressBar
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -79,11 +84,15 @@
             android:layout_margin="12dp"
             android:visibility="gone"
             android:padding="12dp"/>
+
         <TextView
+            android:id="@+id/go_to_login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account"
-            android:id="@+id/go_to_login_btn"/>
+            android:padding="6dp"
+            android:paddingLeft="6dp"
+            android:text="Opps! Existing User...go back to login"
+            android:textSize="15dp" />
 
 
     </LinearLayout>

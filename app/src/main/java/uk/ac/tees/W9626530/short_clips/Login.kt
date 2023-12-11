@@ -9,7 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import uk.ac.tees.W9626530.short_clips.databinding.ActivityLoginBinding
 import uk.ac.tees.W9626530.short_clips.util.UiUtil
 
-class LoginActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
 
     lateinit var binding: ActivityLoginBinding
 
@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.goToSignupBtn.setOnClickListener {
-            startActivity(Intent(this, SignupActivity::class.java))
+            startActivity(Intent(this, Signup::class.java))
             finish()
         }
 

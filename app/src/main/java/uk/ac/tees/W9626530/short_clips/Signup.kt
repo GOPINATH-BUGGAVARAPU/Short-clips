@@ -12,7 +12,7 @@ import uk.ac.tees.W9626530.short_clips.databinding.ActivitySignupBinding
 import uk.ac.tees.W9626530.short_clips.model.UserModel
 import uk.ac.tees.W9626530.short_clips.util.UiUtil
 
-class SignupActivity : AppCompatActivity() {
+class Signup : AppCompatActivity() {
 
     lateinit var binding: ActivitySignupBinding
 
@@ -27,7 +27,7 @@ class SignupActivity : AppCompatActivity() {
         }
 
         binding.goToLoginBtn.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, Login::class.java))
             finish()
         }
     }

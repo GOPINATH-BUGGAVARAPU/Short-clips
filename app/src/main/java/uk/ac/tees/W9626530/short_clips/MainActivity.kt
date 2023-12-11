@@ -6,7 +6,6 @@ import android.os.Bundle
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
-import uk.ac.tees.W9626530.short_clips.R
 import uk.ac.tees.W9626530.short_clips.adapter.VideoListAdapter
 import uk.ac.tees.W9626530.short_clips.databinding.ActivityMainBinding
 import uk.ac.tees.W9626530.short_clips.model.VideoModel
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                     UiUtil.showToast(this,"Home")
                 }
                 R.id.bottom_menu_add_video ->{
-                    startActivity(Intent(this, VideoUploadActivity::class.java))
+                    startActivity(Intent(this, upload::class.java))
                 }
                 R.id.bottom_menu_profile ->{
                     UiUtil.showToast(this,"Profile")

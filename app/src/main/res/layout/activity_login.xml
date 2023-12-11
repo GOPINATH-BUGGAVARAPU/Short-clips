@@ -7,42 +7,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:layout_margin="16dp"
-    tools:context="uk.ac.tees.W9626530.short_clips.LoginActivity">
+    android:background="@drawable/background"
+    android:layout_margin="0dp"
+    tools:context="uk.ac.tees.W9626530.short_clips.Login">
 
     <ImageView
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_margin="8dp"
-        android:src="@drawable/logo"/>
+        android:layout_width="204dp"
+        android:layout_height="229dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:letterSpacing="0.07"
+        android:text="Short Clips"
+        android:textColor="@color/Blue"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quick Bites"
+        android:layout_margin="20dp"
         android:gravity="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.07"/>
+        android:textColor="@color/black"
+        android:text="Let's Go..."
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="32sp"
-            android:layout_margin="12dp"/>
-        <EditText
+    <EditText
             android:id="@+id/email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Enter the Email"
             android:background="@drawable/rounded_corner"
             android:inputType="textEmailAddress"
             android:padding="12dp"
@@ -56,13 +55,18 @@
             android:inputType="textPassword"
             android:padding="12dp"
             android:layout_margin="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/submit_btn"
-            android:text="Login"
-            android:layout_margin="12dp"
-            android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="176dp"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        android:padding="6dp"
+        android:shadowColor="@color/PURPLE"
+        android:text="Done"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/PURPLE"/>
         <ProgressBar
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -73,9 +77,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account"
+            android:text="New Here! Lets Register"
+            android:textStyle="italic"
+            android:textSize="16sp"
             android:id="@+id/go_to_signup_btn"/>
 
 
-    </LinearLayout>
+
 </LinearLayout>
